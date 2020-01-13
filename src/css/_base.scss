@@ -1,6 +1,23 @@
 @import "variables";
 
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	font-family: poppins;
+}
+
 body {
 	margin: 0;
-	padding: 0;
+	padding: 1.5625rem;
+	background-color: $backgroundColor;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__text{
+	color: $whiteColor;
+	font-weight: 300;
+	letter-spacing: 0.1875rem;
 }

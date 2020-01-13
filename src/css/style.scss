@@ -1,5 +1,12 @@
 @import "base";
 
-.main{
-    background-color: $backgroundColor;
+.main {
+  background-color: $backgroundColor;
+  .main__header {
+    font-size: 2rem;
+    background: linear-gradient(90deg,rgba(238, 9, 121, 1),rgba(255, 106, 0, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	margin-top: 2.9625rem;
+  }
 }
