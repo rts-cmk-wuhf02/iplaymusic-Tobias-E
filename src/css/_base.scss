@@ -1,17 +1,20 @@
 @import "variables";
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, figcaption{
 	margin: 0;
 	font-family: poppins;
 }
 
 body {
 	margin: 0;
-	padding: 1.5625rem;
 	background-color: $backgroundColor;
+	position: relative;
 }
 
+	/* padding: 1.5625rem; */
+
 header {
+	margin: 1.5625rem 1.5625rem 0 1.5625rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -20,4 +23,26 @@ header {
 	color: $whiteColor;
 	font-weight: 300;
 	letter-spacing: 0.1875rem;
+}
+
+.main{
+	padding: 0 1.5625rem 1.5625rem 1.5625rem;
+}
+
+// Navigation
+.footer{
+	position: sticky;
+	bottom: 0;
+	z-index: 9999;
+}
+.footer__nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+ background-color: $navBackgroundColor;
+ height: 4.0625rem;
+}
+
+.link__center_width{
+	width: 2.8125rem;
 }

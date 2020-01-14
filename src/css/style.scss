@@ -4,9 +4,58 @@
   background-color: $backgroundColor;
   .main__header {
     font-size: 2rem;
-    background: linear-gradient(90deg,rgba(238, 9, 121, 1),rgba(255, 106, 0, 1));
+    background: linear-gradient(
+      90deg,
+      rgba(238, 9, 121, 1),
+      rgba(255, 106, 0, 1)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-	margin-top: 2.9625rem;
+    margin-top: 2.9625rem;
+  }
+
+  .main__imgContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .imgContainer__singleImgContainer{
+          margin: 2.29375rem 0 0 0;
+          display: flex;
+          justify-content: center;
+          max-width: 18.8125rem;
+          position: relative;
+          border-radius: 10px;
+          overflow: hidden;
+          .singleImgContainer__img{
+              max-width: 18.8125rem;
+              z-index: 1;
+              border-radius: 10px;
+          }
+          .singleImgContainer__shadow{
+              max-width: 18.8125rem;
+              position: absolute;
+              z-index: 2;
+              bottom: -0.0625rem;
+          }
+          .singleImgContainer__title{
+              position: absolute;
+              z-index: 3;
+              left: 1.1875rem;
+              bottom: 4.8rem;
+              font-size: 2rem;
+              font-weight: 600;
+              color: $whiteColor;
+            }
+            .singleImgContainer__text{
+                position: absolute;
+                z-index: 3;
+                left: 1.1875rem;
+                bottom: 2.9875rem;
+                font-size: 0.75rem;
+                font-weight: 300;
+                color: $whiteColor;
+            }
+      }
   }
 }
