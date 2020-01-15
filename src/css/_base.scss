@@ -43,6 +43,18 @@ header {
  height: 4.0625rem;
 }
 
-.link__center_width{
+.link__center{
 	width: 2.8125rem;
+	height: 2.8125rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $whiteColor;
+	border-radius: 50%;
+}
+
+.link__img_black{
+	position: absolute;
+	z-index: 5;
 }
