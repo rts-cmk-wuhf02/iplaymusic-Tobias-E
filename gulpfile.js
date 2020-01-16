@@ -9,7 +9,7 @@ const imagemin = require("gulp-imagemin");
 sass.compiler = require("node-sass");
 
 function html(done) {
-	gulp.src("src/html/templates/*.ejs")
+	gulp.src("./src/html/templates/*.ejs")
 		.pipe(ejs().on("error", err => console.log(err)))
 		.pipe(rename(function(path) {
 			if (path.basename != "index") {
@@ -24,11 +24,11 @@ function html(done) {
 }
 
 function watchHtml() {
-	gulp.watch("src/html/**/*.ejs", { ignoreInitial: false }, html);
+	gulp.watch("./src/html/**/*.ejs", { ignoreInitial: false }, html);
 }
 
 function scss(done) {
-	gulp.src("src/css/**/*.scss")
+	gulp.src("./src/css/**/*.scss")
 		.pipe(sass().on("error", err => console.log(err)))
 		.pipe(gulp.dest("dist/assets/css"))
 		.pipe(connect.reload());
@@ -36,7 +36,7 @@ function scss(done) {
 }
 
 function watchScss() {
-	gulp.watch("src/css/**/*.scss", { ignoreInitial: false }, scss);
+	gulp.watch("./src/css/**/*.scss", { ignoreInitial: false }, scss);
 }
 
 function javascript(done) {
