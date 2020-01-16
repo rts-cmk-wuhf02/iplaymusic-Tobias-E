@@ -1,0 +1,45 @@
+@import "base";
+
+.main__subtitle{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.29375rem 0 1.5rem 0;
+}
+
+.subtitle__text{
+    color: $whiteColor;
+}
+
+.subtitle__view{
+    color: $subColor;
+}
+
+.songContainer__song{
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song__img{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 5px;
+}
+
+.song__quantity{
+    color: $whiteColor;
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin: 0 0 0 5.9375rem;
+}
+
+.info__title{
+    color: $whiteColor;
+}
+
+.smallText{
+    color: $whiteColor;
+    font-size: 0.75rem;
+    font-weight: 300;
+}

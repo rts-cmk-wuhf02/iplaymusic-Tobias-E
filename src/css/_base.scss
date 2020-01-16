@@ -12,22 +12,37 @@ figcaption {
   font-family: poppins;
 }
 
+h5{
+  font-size: 0.9375rem;
+}
+
 body {
   margin: 0;
   background-color: $backgroundColor;
   position: relative;
 }
 
+// Header 
 header {
   margin: 1.5625rem 1.5625rem 0 1.5625rem;
   display: flex;
   justify-content: space-between;
 }
 
+.header__arrowBack{
+  width: 0.53625rem;
+  height: 0.9375rem;
+}
+
 .header__text {
   color: $whiteColor;
   font-weight: 300;
   letter-spacing: 0.1875rem;
+}
+
+.header__search{
+  width: 0.9375rem;
+  height: 0.9375rem;
 }
 
 .main {
