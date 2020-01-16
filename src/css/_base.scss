@@ -24,9 +24,10 @@ body {
 
 // Header 
 header {
-  margin: 1.5625rem 1.5625rem 0 1.5625rem;
+  padding: 1.5625rem 1.5625rem 0 1.5625rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__arrowBack{
@@ -46,7 +47,7 @@ header {
 }
 
 .main {
-  padding: 0 1.5625rem 1.5625rem 1.5625rem;
+  padding: 0 1.5625rem 5rem 1.5625rem;
 }
 
 // Navigation
@@ -54,6 +55,7 @@ header {
   position: sticky;
   bottom: 0;
   z-index: 9999;
+  width: 100%;
 }
 .footer__nav {
   display: flex;
