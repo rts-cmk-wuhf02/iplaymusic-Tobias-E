@@ -1,0 +1,17 @@
+@import "base";
+
+.main__categoriesContainer{
+    padding: 0;
+}
+
+.categoriesContainer__category{
+    height: 3.375rem;
+    list-style: none;
+    color: $whiteColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #D70060;
+    padding: 0 1.5rem;
+}
