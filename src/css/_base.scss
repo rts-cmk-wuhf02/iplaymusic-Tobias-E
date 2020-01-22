@@ -33,6 +33,7 @@ header {
 .header__arrowBack{
   width: 0.53625rem;
   height: 0.9375rem;
+  fill: $whiteColor;
 }
 
 .header__text {
@@ -78,7 +79,7 @@ header {
 
 .link__img_black {
   position: absolute;
-  z-index: 5;
+  z-index: 10005;
 }
 
 /* #albums .albums{
