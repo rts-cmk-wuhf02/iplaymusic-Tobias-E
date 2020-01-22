@@ -13,7 +13,20 @@
         <h5 class="subtitle__text">Featured albums</h5>
         <p class="subtitle__view">View all</p>
     </div>
-    <h1 class="exchange">Slider swiper!</h1>
+      <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <img src="/assets/images/albums_img1.png" alt="" class="swiper-slide">
+      </div>
+      <div class="swiper-slide">
+          <img src="/assets/images/albums_img2.png" alt="" class="swiper-slide">
+      </div>
+      <div class="swiper-slide">
+          <img src="/assets/images/albums_img3.png" alt="" class="swiper-slide">
+      </div>
+    </div>
+  </div>
     <div class="main__subtitle">
         <h5 class="subtitle__text">New Releases</h5>
         <p class="subtitle__view">View all</p>
@@ -94,4 +107,17 @@
     </div>
 </main>
 <% include ../partials/nav %> 
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="/assets/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 <% include ../partials/after-footer %>

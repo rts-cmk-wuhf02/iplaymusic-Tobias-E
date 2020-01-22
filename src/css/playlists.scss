@@ -1,16 +1,11 @@
 @import "base";
 
 // Swiper slider
-  .swiper-container {
-    //width: 100%;
-    padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
-  }
   .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 11rem;
-    height: 11rem;
+    //height: 11rem;
   }
 
 .body__background{
