@@ -15,3 +15,30 @@
     background-color: #D70060;
     padding: 0 1.5rem;
 }
+
+.categoriesContainer__subCategories{
+    list-style: none;
+    color: $whiteColor;
+    padding: 0.5rem 0;
+}
+
+.subCategories__subCategory{
+    padding: 1rem 1.5625rem 0 1.5625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subCategory__text{
+    font-size: 0.9375rem;
+    font-weight: 300;
+}
+
+.subCategory__img{
+    width: 0.42875rem;
+    height: 0.75rem;
+}
+
+.hide{
+    display: none;
+}
